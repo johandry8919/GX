@@ -14,8 +14,8 @@ function runAnimationIN() {
     
   
    
-    //gsap.set("#segunda_right", { delay: 0.1, opacity: 0});
-    //gsap.set("#tercera_right", { delay: 0.1, opacity: 0});
+      gsap.set("#efec_left", { delay: 0.1, opacity: 0});
+      gsap.set("#efec_right", { delay: 0.1, opacity: 0});
     gsap.set("#apariciones_left", { delay: 0.1, opacity: 0});
     gsap.set("#apariciones_right", { delay: 0.1, opacity: 0});
     gsap.set("#salvados_left", { delay: 0.1, opacity: 0});
@@ -154,9 +154,9 @@ function runAnimationIN() {
         ease: "Power3.easeOut",
       }
     );
-    //segunda_right
+    //efec_right
   gsap.fromTo(
-      "#segunda_right",
+      "#efec_right",
       { opacity: 0 },
       {
         delay: 0.6,
@@ -167,13 +167,13 @@ function runAnimationIN() {
     );
 
     gsap.fromTo(
-      "#segunda_right",
+      "#efec_right",
       { x: 300 },
       { delay: 0.6, duration: dur - 0.2, x: 0, ease: "back.out(0.3)" }
     );
 
     gsap.fromTo(
-      "#segunda_right",
+      "#efec_right",
       { opacity: 0 },
       {
         delay: 0.6,
@@ -269,9 +269,9 @@ function runAnimationIN() {
         ease: "Power3.easeOut",
       }
     );
-    //segunda_right
+    //efec_left
   gsap.fromTo(
-      "#segunda_left",
+      "#efec_left",
       { opacity: 0 },
       {
         delay: 0.6,
@@ -282,7 +282,7 @@ function runAnimationIN() {
     );
 
     gsap.fromTo(
-      "#segunda_left",
+      "#efec_left",
       { x: -300 },
       { delay: 0.6, duration: dur - 0.2, x: 0, ease: "back.out(0.3)" }
     );
