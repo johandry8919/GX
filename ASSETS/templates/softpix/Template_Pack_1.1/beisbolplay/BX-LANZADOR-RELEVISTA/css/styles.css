@@ -85,6 +85,9 @@
   position: absolute;
   letter-spacing: 5px;
 }
+.cont-3 .cont .info  p{
+ opacity: 0;
+}
 
 .cont-2 .info h2 {
   padding: 0;
