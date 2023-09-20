@@ -20,8 +20,11 @@ function runAnimationIN() {
     gsap.set("#apariciones_right", { delay: 0.1, opacity: 0});
     gsap.set("#salvados_left", { delay: 0.1, opacity: 0});
     gsap.set("#salvados_right", { delay: 0.1, opacity: 0});
-    //gsap.set("#segunda_left", { delay: 0.1, opacity: 0});
-    //gsap.set("#tercera_left", { delay: 0.1, opacity: 0});
+    gsap.set("#ip_left", { delay: 0.1, opacity: 0});
+    gsap.set("#ip_right", { delay: 0.1, opacity: 0});
+    gsap.set("#k_left", { delay: 0.1, opacity: 0});
+    gsap.set("#k_right", { delay: 0.1, opacity: 0});
+    gsap.set("#op_avg_right", { delay: 0.1, opacity: 0});
     gsap.set("#cont-2", { delay: 0.1, opacity: 0});
     gsap.set("#cont-3", { delay: 0.1, opacity: 0});
   }
@@ -176,18 +179,18 @@ function runAnimationIN() {
       "#efec_right",
       { opacity: 0 },
       {
-        delay: 0.6,
+        delay: 0.10,
         duration: dur - 0.2,
         opacity: 2,
         ease: "Power3.easeOut",
       }
     );
-    //tercera_right
+    //ip_right
   gsap.fromTo(
-      "#tercera_right",
+      "#ip_right",
       { opacity: 0 },
       {
-        delay: 0.8,
+        delay: 0.9,
         duration: dur - 0.2,
         opacity: 1,
         ease: "Power3.easeOut",
@@ -195,18 +198,74 @@ function runAnimationIN() {
     );
 
     gsap.fromTo(
-      "#tercera_right",
+      "#ip_right",
       { x: 300 },
-      { delay: 0.8, duration: dur - 0.2, x: 0, ease: "back.out(0.3)" }
+      { delay: 0.9, duration: dur - 0.2, x: 0, ease: "back.out(0.3)" }
     );
 
     gsap.fromTo(
-      "#tercera_right",
+      "#ip_right",
       { opacity: 0 },
       {
-        delay: 0.8,
+        delay: 0.9,
         duration: dur - 0.2,
-        opacity: 2,
+        opacity: 1,
+        ease: "Power3.easeOut",
+      }
+    );
+  gsap.fromTo(
+      "#k_right",
+      { opacity: 0 },
+      {
+        delay: 0.9,
+        duration: dur - 0.2,
+        opacity: 1,
+        ease: "Power3.easeOut",
+      }
+    );
+
+    gsap.fromTo(
+      "#k_right",
+      { x: 300 },
+      { delay: 0.9, duration: dur - 0.2, x: 0, ease: "back.out(0.3)" }
+    );
+
+    gsap.fromTo(
+      "#k_right",
+      { opacity: 0 },
+      {
+        delay: 0.9,
+        duration: dur - 0.2,
+        opacity: 1,
+        ease: "Power3.easeOut",
+      }
+    );
+
+    //op_avg_right
+  gsap.fromTo(
+      "#op_avg_right",
+      { opacity: 0 },
+      {
+        delay: 1.0,
+        duration: dur - 0.1,
+        opacity: 1,
+        ease: "Power3.easeOut",
+      }
+    );
+
+    gsap.fromTo(
+      "#op_avg_right",
+      { x: 300 },
+      { delay: 1.0, duration: dur - 0.1, x: 0, ease: "back.out(0.3)" }
+    );
+
+    gsap.fromTo(
+      "#op_avg_right",
+      { opacity: 0 },
+      {
+        delay: 1.0,
+        duration: dur - 0.1,
+        opacity: 1,
         ease: "Power3.easeOut",
       }
     );
@@ -297,12 +356,12 @@ function runAnimationIN() {
         ease: "Power3.easeOut",
       }
     );
-    //tercera_right
+    //ip_right
   gsap.fromTo(
-      "#tercera_left",
+      "#ip_left",
       { opacity: 0 },
       {
-        delay: 0.8,
+        delay: 0.9,
         duration: dur - 0.2,
         opacity: 1,
         ease: "Power3.easeOut",
@@ -310,22 +369,77 @@ function runAnimationIN() {
     );
 
     gsap.fromTo(
-      "#tercera_left",
+      "#ip_left",
       { x: -300 },
-      { delay: 0.8, duration: dur - 0.2, x: 0, ease: "back.out(0.3)" }
+      { delay: 0.9, duration: dur - 0.2, x: 0, ease: "back.out(0.3)" }
     );
 
     gsap.fromTo(
-      "#tercera_left",
+      "#ip_left",
       { opacity: 0 },
       {
-        delay: 0.8,
+        delay: 0.9,
         duration: dur - 0.2,
         opacity: 1,
         ease: "Power3.easeOut",
       }
     );
-      //left
+  gsap.fromTo(
+      "#k_left",
+      { opacity: 0 },
+      {
+        delay: 0.9,
+        duration: dur - 0.2,
+        opacity: 1,
+        ease: "Power3.easeOut",
+      }
+    );
+
+    gsap.fromTo(
+      "#k_left",
+      { x: -300 },
+      { delay: 0.9, duration: dur - 0.2, x: 0, ease: "back.out(0.3)" }
+    );
+
+    gsap.fromTo(
+      "#k_left",
+      { opacity: 0 },
+      {
+        delay: 0.9,
+        duration: dur - 0.2,
+        opacity: 1,
+        ease: "Power3.easeOut",
+      }
+    );
+    //op_avg_left
+  gsap.fromTo(
+      "#op_avg_left",
+      { opacity: 0 },
+      {
+        delay: 1.0,
+        duration: dur - 0.2,
+        opacity: 1,
+        ease: "Power3.easeOut",
+      }
+    );
+
+    gsap.fromTo(
+      "#op_avg_left",
+      { x: -300 },
+      { delay: 1.0, duration: dur - 0.2, x: 0, ease: "back.out(0.3)" }
+    );
+
+    gsap.fromTo(
+      "#op_avg_left",
+      { opacity: 0 },
+      {
+        delay: 1.0,
+        duration: dur - 0.2,
+        opacity: 1,
+        ease: "Power3.easeOut",
+      }
+    );
+      //op_avg_left
 
       },1200)
 
