@@ -1,0 +1,114 @@
+<head>
+    <!-- ### CASPAR ### -->
+    <script src="../../js/gsap3.2.6.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../css/spx_layout.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/spx_fonts.css" />
+    <script type="text/javascript" src="../../js/spx_interface.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  
+    <link
+      rel="stylesheet"
+      type="text/css"
+      id="DynamicTheme"
+      href="css/styles.css"
+    />
+  
+    <script>
+      // Template settings
+      var dev = false,
+        gotVideo = false,
+        gotImage = false,
+        gotLoop = false,
+        gotWipe = false,
+        gotContent = true,
+        fadeIn = true,
+        fadeOut = false;
+    </script>
+  
+    <script type="text/javascript">
+      window.SPXGCTemplateDefinition = {
+        description: "",
+        playserver: "OVERLAY",
+        playchannel: "1",
+        playlayer: "1",
+        webplayout: "1",
+        out: "manual",
+        dataformat: "json",
+        uicolor: "3",
+        DataFields: [
+          {
+            field: "comment",
+            ftype: "textfield",
+            title: "GRAFICO_5A",
+            value: "GRAFICO_5A",
+          },
+
+          {
+                "field" : "f0",
+                "ftype" : "textfield",
+                "title" : "Texto dinamico",
+                "value" : "hoy 5-3 / 2 hr / h / k / 4 ci "
+                
+             
+            },
+          
+  
+  
+              {
+                  "field": "f3",
+                  "ftype": "filelist",
+                  "title": "Elija la imagen del patrocinador",
+                  "assetfolder" : "/media/images/bg/" ,
+                  "extension" : "png",
+                  "value": "none",
+              },
+        ],
+      };
+    </script>
+  </head>
+  <body>
+    <div
+      id="container"
+      class="container SPXWindow SPX_AUTOSIZE"
+      data-spx-remember="Use either SPX_AUTOSIZE or SPX_FIXSIZE"
+    >
+
+    <div id="cont-1" class="cont-1">
+
+        <div class="logo">
+            <img id="logo_team"  src="logos_equipos/logo_team_1.png" alt="">
+        </div>
+
+        <div class="cont-2">
+            <div class="name" id="name" >Ronald acuña js </div>
+            <div id="fxt" class="text-name"></div>
+
+        </div>
+
+    </div>
+
+    <div id="cont-3" class="cont-3">
+        <div class="cont-4">
+            <h2 style="opacity: 0;">Ronal acuña js </h2>
+
+            <p style="opacity: 0;" class="">hoy 5-3 / </p>
+
+        </div>
+
+    </div>
+     
+    
+      <div  style="opacity:0;"  id="f0"></div>
+      <div  style="opacity:0;"  id="f3"></div>
+    </div>
+    <script src="../_js/jquery-3.0.0.min.js"></script>
+    <script src="js/animaciones.js"></script>
+    <script src="js/api.js"></script>
+    <script src=""></script>
+  </body>
+  

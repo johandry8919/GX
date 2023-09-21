@@ -47,6 +47,17 @@
           title: "BX-LANZADOR-RELEVISTA",
           value: "BX-LANZADOR-RELEVISTA",
         },
+        
+
+
+            {
+                "field": "f3",
+                "ftype": "filelist",
+                "title": "Elija la imagen del patrocinador",
+                "assetfolder" : "/media/images/bg/" ,
+                "extension" : "png",
+                "value": "none",
+            },
       ],
     };
   </script>
@@ -58,7 +69,9 @@
     data-spx-remember="Use either SPX_AUTOSIZE or SPX_FIXSIZE"
   >
     <div class="bx-lanzador">
-      <div class="cont-1"></div>
+      <div id="cont-1" class="cont-1">
+        <img   id="logoPatrocinio" width="100%" src="" >
+      </div>
       <div id="cont-2" class="cont-2">
         <div class="logo">
           <img
@@ -96,6 +109,7 @@
         <div class="info">
           <p id="efec_left">efec:</p>
           <p id="efec_right">3.88</p>
+          <div id="color" class="color"></div>
         </div>
         <div class="info">
           <p id="ip_left">ip:</p>
@@ -111,6 +125,8 @@
         </div>
       </div>
     </div>
+  
+    <div  style="opacity:0;"  id="f3"></div>
   </div>
   <script src="../_js/jquery-3.0.0.min.js"></script>
   <script src="js/animaciones.js"></script>

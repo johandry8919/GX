@@ -1,9 +1,5 @@
 
 
-
-
-
-
 function runAnimationIN() {
   let dur = 0.5;
 
@@ -11,11 +7,9 @@ function runAnimationIN() {
     gsap.ticker.fps(window.top.spxRenderer.fps);
     console.log("spxRenderer: " + window.top.spxRenderer.fps + " FPS");
 
-    
-  
-   
     gsap.set("#efec_left", { delay: 0.1, opacity: 0});
     gsap.set("#efec_right", { delay: 0.1, opacity: 0});
+    gsap.set("#color", { delay: 0.1, opacity: 0});
     gsap.set("#apariciones_left", { delay: 0.1, opacity: 0});
     gsap.set("#apariciones_right", { delay: 0.1, opacity: 0});
     gsap.set("#salvados_left", { delay: 0.1, opacity: 0});
@@ -25,8 +19,11 @@ function runAnimationIN() {
     gsap.set("#k_left", { delay: 0.1, opacity: 0});
     gsap.set("#k_right", { delay: 0.1, opacity: 0});
     gsap.set("#op_avg_right", { delay: 0.1, opacity: 0});
+    gsap.set("#cont-1", { delay: 0.1, opacity: 0});
     gsap.set("#cont-2", { delay: 0.1, opacity: 0});
     gsap.set("#cont-3", { delay: 0.1, opacity: 0});
+
+  
   }
 
   //title
@@ -68,6 +65,34 @@ function runAnimationIN() {
 
       setTimeout(()=>{
           gsap.fromTo(
+              "#cont-1",
+              { opacity: 0 },
+              {
+                delay: 0.6,
+                duration: dur - 0.2,
+                opacity: 0,
+                ease: "Power3.easeOut",
+              }
+            );
+        
+            gsap.fromTo(
+              "#cont-1",
+              { y: 100 },
+              { delay: 0.6, duration: dur - 0.2, y: 0, ease: "back.out(0.3)" }
+            );
+        
+            gsap.fromTo(
+              "#cont-1",
+              { opacity: 0 },
+              {
+                delay: 0.6,
+                duration: dur - 0.2,
+                opacity: 1,
+                ease: "Power3.easeOut",
+              }
+            );
+            
+          gsap.fromTo(
               "#cont-3",
               { opacity: 0 },
               {
@@ -90,7 +115,7 @@ function runAnimationIN() {
               {
                 delay: 0.6,
                 duration: dur - 0.2,
-                opacity: 2,
+                opacity: 1,
                 ease: "Power3.easeOut",
               }
             );
@@ -177,6 +202,33 @@ function runAnimationIN() {
 
     gsap.fromTo(
       "#efec_right",
+      { opacity: 0 },
+      {
+        delay: 0.6,
+        duration: dur - 0.2,
+        opacity: 2,
+        ease: "Power3.easeOut",
+      }
+    );
+  gsap.fromTo(
+      "#color",
+      { opacity: 0 },
+      {
+        delay: 0.6,
+        duration: dur - 0.2,
+        opacity: 1,
+        ease: "Power3.easeOut",
+      }
+    );
+
+    gsap.fromTo(
+      "#color",
+      { x: 300 },
+      { delay: 0.6, duration: dur - 0.2, x: 0, ease: "back.out(0.3)" }
+    );
+
+    gsap.fromTo(
+      "#color",
       { opacity: 0 },
       {
         delay: 0.6,
@@ -440,17 +492,11 @@ function runAnimationIN() {
       }
     );
       //op_avg_left
-
       },1200)
-
-
-
-
   //container
-
-
-
 }
+
+
 
 
 function runAnimationOUT() {

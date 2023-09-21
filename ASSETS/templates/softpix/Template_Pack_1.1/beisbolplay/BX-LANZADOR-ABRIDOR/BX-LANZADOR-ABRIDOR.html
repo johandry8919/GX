@@ -47,6 +47,15 @@
           title: "BX-LANZADOR-ABRIDOR",
           value: "BX-LANZADOR-ABRIDOR",
         },
+
+        {
+                "field": "f3",
+                "ftype": "filelist",
+                "title": "Elija la imagen del patrocinador",
+                "assetfolder" : "/media/images/bg/" ,
+                "extension" : "png",
+                "value": "none",
+            },
       ],
     };
   </script>
@@ -58,7 +67,9 @@
     data-spx-remember="Use either SPX_AUTOSIZE or SPX_FIXSIZE"
   >
     <div class="bx-lanzador">
-      <div class="cont-1"></div>
+      <div id="cont-1" class="cont-1">
+        <img   id="logoPatrocinio" width="100%" src="" >
+      </div>
       <div id="cont-2" class="cont-2">
         <div class="logo">
           <img
@@ -86,16 +97,17 @@
     <div id="cont-3" class="cont-3">
       <div class="cont">
         <div class="info">
-          <p id="apariciones_left">apariciones:</p>
+          <p id="apariciones_left">APERTURAS:</p>
           <p id="apariciones_right">100</p>
         </div>
         <div class="info">
-          <p id="salvados_left">salvados:</p>
+          <p id="salvados_left">G-P:</p>
           <p id="salvados_right">100</p>
         </div>
         <div class="info">
           <p id="efec_left">efec:</p>
           <p id="efec_right">3.88</p>
+          <div id="color" class="color"></div>
         </div>
         <div class="info">
           <p id="ip_left">ip:</p>
@@ -111,6 +123,7 @@
         </div>
       </div>
     </div>
+    <div  style="opacity:0;"  id="f3"></div>
   </div>
   <script src="../_js/jquery-3.0.0.min.js"></script>
   <script src="js/animaciones.js"></script>
